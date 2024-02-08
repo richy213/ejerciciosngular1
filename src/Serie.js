@@ -35,10 +35,10 @@ class Serie {
     }
 
     terminoN(n) {
-        const fibNPlus1 = this.fibonacci(n + 1);
-        const triN = this.triangular(n);
-        const primoNPlus1 = this.getNextPrime(n + 1);
-        return fibNPlus1 -(2*triN) + primoNPlus1;
+        const fib = this.fibonacci(n + 1);
+        const tri = this.triangular(n);
+        const prim = this.getNextPrime(n + 1);
+        return fib -(2*tri) + prim;
     }
 
     getNextPrime(n) {
